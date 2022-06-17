@@ -18,6 +18,16 @@ instruction_fn get_instruction_fn(const char *opcode)
 		{"pop",   op_pop},
 		{"push",  op_push},
 		{"swap",  op_swap},
+		{"div",   op_div},
+		{"mod",   op_mod},
+		{"mul",   op_mul},
+		{"pchar", op_pchar},
+		{"pstr",  op_pstr},
+		{"queue", op_queue},
+		{"rotl",  op_rotl},
+		{"rotr",  op_rotr},
+		{"stack", op_stack},
+		{"sub",   op_sub},
 		{0}
 	};
 	instruction_t *op = instructions;

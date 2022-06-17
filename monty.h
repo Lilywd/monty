@@ -71,11 +71,21 @@ extern op_env_t op_env;
 instruction_fn get_instruction_fn(const char *opcode);
 
 void op_add(stack_t **sp);
+void op_div(stack_t **sp);
+void op_mod(stack_t **sp);
+void op_mul(stack_t **sp);
 void op_nop(stack_t **sp);
 void op_pall(stack_t **sp);
+void op_pchar(stack_t **sp);
 void op_pint(stack_t **sp);
 void op_pop(stack_t **sp);
+void op_pstr(stack_t **sp);
 void op_push(stack_t **sp);
+void op_queue(stack_t **sp);
+void op_rotl(stack_t **sp);
+void op_rotr(stack_t **sp);
+void op_stack(stack_t **sp);
+void op_sub(stack_t **sp);
 void op_swap(stack_t **sp);
 
 char **tokenize(char *str);
